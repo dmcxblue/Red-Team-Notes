@@ -1,2 +1,2 @@
 # Scripts
-Just a few scripts that help around or when I wanted to buy time with a task
+Just learning around new stuff mostly Red Teaming and such but will try to see if I can update or simplify them more, nothing too exotic (yet).
