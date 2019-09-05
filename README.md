@@ -1,2 +1,4 @@
 # Scripts
-Just learning around new stuff mostly Red Teaming and such but will try to see if I can update or simplify them more, nothing too exotic (yet).
+Thse will most likely get updated in due time
+Some scripts are for Tools from HAK5 other that help in enumration
+but mostly all are towards Red Teaming and General Pentesting nothing really in particular.
