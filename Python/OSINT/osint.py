@@ -1,4 +1,5 @@
 #!/usr/bin/python3 env
+# Takes a lot of screenshots
 
 import optparse
 import requests
@@ -11,9 +12,9 @@ print('A simple OSINT Tool that is probably slow, but I like it')
 
 def people_search():
         parser = optparse.OptionParser()
-        parser.add_option('-p','--search', dest='search', help='Search Type')
-        parser.add_option('-n','--fname', dest='fname', help='Name')
-        parser.add_option('-l','--lname', dest='lname', help='Last')
+        parser.add_option('-p','--search', dest='search', help='Search Type People, Number, Email, Username')
+        parser.add_option('-n','--fname', dest='fname', help='First Name of Target')
+        parser.add_option('-l','--lname', dest='lname', help='Last Name of taget')
         (options, arguments) = parser.parse_args()
         if not options.search:
                 # Code for people error
@@ -28,7 +29,7 @@ def people_search():
 
 def search_people(search, fname, lname):
         print('[+] Searching for {}'.format(search, fname))
-        subprocess.call(['webscreenshot', '-v', 'https://thatsthem.com/name/' + fname + '-' + lname + '/CA'])
+        subprocess.call(['webscreenshot', '-f', 'pdf', 'https://thatsthem.com/name/' + fname + '-' + lname + '/CA'])
 
 options = people_search()
 search_people(options.search, options.fname, options.lname)
