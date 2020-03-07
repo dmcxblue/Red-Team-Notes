@@ -112,7 +112,7 @@ def osint():
 		subprocess.call(['searchfy', '-q', name])
 		print ("Done")
 	elif osint_c == 'phone':
-		print (Please enter a phone number')
+		print ('Please enter a phone number')
 		print ('No need for dashes')
 		phone = input ('OSINT > ')
 		print ('[+]Searchg for {}'.format(phone))
