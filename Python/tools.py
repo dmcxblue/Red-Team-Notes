@@ -57,7 +57,7 @@ if ready == 'Y' or 'y':
 	# subprocess.call(['pip', 'install', '-r', '/opt/spiderfoot/requirements.txt')]
 	# Continue with tools
 	# Installing packages
-	os.system('wget -q ' package1)
+	os.system('wget -q ' + package1)
 elif ready == 'N':
 	print ("OK")
 
