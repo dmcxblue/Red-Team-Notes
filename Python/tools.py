@@ -2,9 +2,11 @@
 # Favorite tools
 # Scripted cause I have to download again everytime I start fresh
 # It's annoying
-# This tool doesnt automatically installt hem....Yet
+# This tool doesnt automatically install them....Yet
 # Won't work on that becasue I don't want it to force install any packages
-# Version 0.1
+# Version 0.3
+# Added more tools and fixed some typos
+# Added more installations steps so tools get a chance to be ready and installed
 
 import subprocess
 import time
@@ -13,7 +15,7 @@ import os
 print ("Tool installer for Red Team")
 print ('')
 print ("Or hacking in general")
-print ("THIS WILL NOT INSTALL THE JUST DOWNLOAD THE REPO'S")
+print ("THIS WILL NOT INSTALL THE JUST DOWNLOAD THE REPOS")
 print ("Please run as root files get saved on your '/opt' PATH")
 print ('')
 print ("Ready ?")
@@ -30,6 +32,22 @@ if ready == 'Y' or 'y':
 	os.system('apt update')
 	os.system('apt upgrade')
 	os.system('apt dist-upgrade')
+	# I can add more dependecies and install them so they are already avaialble
+	# For example DOTNET for Covenant
+	# More tools 0.2
+	os.system('apt install exiftool')
+	os.system('apt install gobuster')
+	os.system('apt install julia') # New programming language
+	os.system('apt install docker')
+	os.system('apt-get install dotnet-sdk-3.1') # This version is necessary for Covenant
+	os.system('apt-get install apt-transport-https')
+	subprocess.call(['git', 'clone', 'https://github.com/1N3/Sn1per.git'])
+	subprocess.call(['git', 'clone', 'https://github.com/m8r0wn/CrossLinked.git'])
+	subprocess.call(['git', 'clone', 'https://github.com/outflanknl/EvilClippy.git'])
+	subprocess.call(['git', 'clone', 'https://github.com/TheWover/donut.git'])
+	subprocess.call(['git', 'clone', 'https://github.com/dafthack/DomainPasswordSpray.git'])
+	subprocess.call(['git', 'clone', 'https://github.com/outflanknl/RedELK.git'])
+	# Tools 0.1
 	subprocess.call(['git', 'clone', 'https://github.com/BC-SECURITY/Empire.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/sevagas/macro_pack.git'])
 	subprocess.call(['git', 'clone', '--recursive', 'https://github.com/cobbr/Covenant.git'])
@@ -60,4 +78,3 @@ if ready == 'Y' or 'y':
 	os.system('wget -q ' + package1)
 elif ready == 'N':
 	print ("OK")
-
