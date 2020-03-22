@@ -26,7 +26,7 @@ package1 ='https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft
 
 ready = input('> ')
 
-if ready == 'Y' or 'y':
+if ready == 'y':
         os.chdir('/opt')
         # First we will update and download a few necessary packages
         os.system('apt update')
@@ -78,5 +78,5 @@ if ready == 'Y' or 'y':
         # subprocess.call(['pip', 'install', '-r', '/opt/spiderfoot/requirements.txt')]
         # Continue with tools
         # Installing packages
-elif ready == 'N':
+elif ready == 'n':
         print ("OK")
