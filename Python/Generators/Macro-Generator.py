@@ -40,3 +40,4 @@ macrof.write(macro)
 macrof.close()
 
 print ("File saved as: " + macro_name)
+
