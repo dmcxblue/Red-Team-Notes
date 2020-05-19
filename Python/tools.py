@@ -4,18 +4,30 @@
 # It's annoying
 # This tool doesnt automatically install them....Yet
 # Won't work on that becasue I don't want it to force install any packages
-# Version 0.3
+# Version 0.5
 # Added more tools and fixed some typos
+# Added the Names cause I would get lost
 # Added more installations steps so tools get a chance to be ready and installed
+######################################
+#
+# Current Tools
+#
+# Sn1per, CrossLinked,EvilCLippy, donut, DomainPasswordSpray, RedELK, Rubeus, BloodHOund, Kerberoast
+# MailSniper, Phantom Evasion, venom, Penetration Testing Tools (Red Team Folder), Empire, Macro_Pack
+# Covenant, Unicorn, SpookFLare,NetLoader, OSRFRAMEWORK, Wesng, GhostPack
+# spoofcheck, skiptracer, ScrapedIn, SimplyEmail (docker), typofinder, pwndb, spiderfoot, demiguise
+# Office-DDE-Payloads, EvilURL, SCT-Obfuscator, UACBypass Collection, CredSniper, Infoga, koadic, Scriblur
+# powerob, LethalHTA, vba-obfuscator, vba_obfuscator, impacket, SprayingToolKit
+# 
+######################################
 
 import subprocess
 import time
 import os
 
 print ("Tool installer for Red Team")
-print ('')
 print ("Or hacking in general")
-print ("THIS WILL NOT INSTALL THE JUST DOWNLOAD THE REPOS")
+print ("THIS WILL NOT INSTALL THE TOOLS IT WILL JUST DOWNLOAD THE REPOS")
 print ("Please run as root files get saved on your '/opt' PATH")
 print ('')
 print ("Ready ?")
@@ -66,6 +78,7 @@ if ready == 'y':
 	subprocess.call(['git', 'clone', 'https://github.com/hlldz/SpookFlare.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/Flangvik/NetLoader.git'])
 	subprocess.call(['apt', 'install', 'osrframework'])
+	subprocess.call(['git', 'clone', 'https://github.com/bitsadmin/wesng.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/BishopFox/spoofcheck.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/xillwillx/skiptracer.git'])
@@ -96,3 +109,4 @@ if ready == 'y':
 	# Installing packages
 elif ready == 'n':
 	print ("OK")
+
