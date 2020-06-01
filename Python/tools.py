@@ -17,7 +17,7 @@
 # Covenant, Unicorn, SpookFLare,NetLoader, OSRFRAMEWORK, Wesng, GhostPack
 # spoofcheck, skiptracer, ScrapedIn, SimplyEmail (docker), typofinder, pwndb, spiderfoot, demiguise
 # Office-DDE-Payloads, EvilURL, SCT-Obfuscator, UACBypass Collection, CredSniper, Infoga, koadic, Scriblur
-# powerob, LethalHTA, vba-obfuscator, vba_obfuscator, impacket, SprayingToolKit
+# powerob, LethalHTA, vba-obfuscator, vba_obfuscator, impacket, SprayingToolKit, docker.io
 # 
 ######################################
 
@@ -54,6 +54,7 @@ if ready == 'y':
 	os.system('apt install gobuster')
 	os.system('apt install julia') # New programming language
 	os.system('apt install docker')
+	os.system('apt install docker.io')
 	os.system('apt-get install dotnet-sdk-2.2') # This version is necessary for Covenant
 	os.system('apt-get install apt-transport-https')
 	# Tools 0.5 (Removed HiddenEye, Added Infoga, Rubeus,Phantom Evasion, MailSniper)
