@@ -94,7 +94,7 @@ if ready == 'y':
 	subprocess.call(['git', 'clone', 'https://github.com/Mr-Un1k0d3r/SCT-obfuscator.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/api0cradle/UltimateAppLockerByPassList.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/ustayready/CredSniper.git'])
-	subprocess.call(['git', 'clone', 'https://github.com/m4ll0k/Infoga.git infoga'])
+	subprocess.call(['git', 'clone', 'https://github.com/m4ll0k/Infoga.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/zerosum0x0/koadic.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/nins3i/Scriblur.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/cwolff411/powerob.git'])
