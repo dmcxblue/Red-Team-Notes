@@ -52,10 +52,10 @@ if ready == 'y':
 	# More tools 0.2
 	os.system('apt install exiftool')
 	os.system('apt install gobuster')
-	os.system('apt install julia') # New programming language
+	#os.system('apt install julia') # New programming language
 	os.system('apt install docker')
 	os.system('apt install docker.io')
-	os.system('apt-get install dotnet-sdk-2.2') # This version is necessary for Covenant
+	os.system('apt-get install dotnet-sdk-3.1') # This version is necessary for Covenant
 	os.system('apt-get install apt-transport-https')
 	# Tools 0.5 (Removed HiddenEye, Added Infoga, Rubeus,Phantom Evasion, MailSniper)
 	# Added Various tools and fixed a few commands
@@ -104,6 +104,8 @@ if ready == 'y':
 	subprocess.call(['git', 'clone', 'https://github.com/ch4meleon/vba_obfuscator.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/SecureAuthCorp/impacket.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/byt3bl33d3r/SprayingToolkit.git'])
+	subprocess.call(['git', 'clone', '--recurse-submodules', 'https://github.com/cobbr/Covenant'])
+	subprocess.call(['git', 'clone', 'https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git'])
 	# This will install Spider requirements
 	# subprocess.call(['pip', 'install', '-r', '/opt/spiderfoot/requirements.txt')]
 	# Continue with tools
