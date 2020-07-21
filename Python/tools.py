@@ -57,6 +57,7 @@ if ready == 'y':
 	os.system('apt install docker.io')
 	os.system('apt-get install dotnet-sdk-3.1') # This version is necessary for Covenant
 	os.system('apt-get install apt-transport-https')
+	os.system('pip3 install mitm6')
 	# Tools 0.5 (Removed HiddenEye, Added Infoga, Rubeus,Phantom Evasion, MailSniper)
 	# Added Various tools and fixed a few commands
 	subprocess.call(['git', 'clone', 'https://github.com/1N3/Sn1per.git'])
@@ -66,7 +67,7 @@ if ready == 'y':
 	subprocess.call(['git', 'clone', 'https://github.com/dafthack/DomainPasswordSpray.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/outflanknl/RedELK.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/GhostPack/Rubeus.git'])
-	subprocess.call(['wget', 'https://github.com/BloodHoundAD/BloodHound/releases/download/3.0.4/BloodHound-darwin-x64.zip'])
+	subprocess.call(['wget', 'https://github.com/BloodHoundAD/BloodHound/releases/download/3.0.4/BloodHound-linux-x64.zip'])
 	subprocess.call(['git', 'clone', 'https://github.com/nidem/kerberoast.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/dafthack/MailSniper.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/oddcod3/Phantom-Evasion.git'])
@@ -105,7 +106,6 @@ if ready == 'y':
 	subprocess.call(['git', 'clone', 'https://github.com/SecureAuthCorp/impacket.git'])
 	subprocess.call(['git', 'clone', 'https://github.com/byt3bl33d3r/SprayingToolkit.git'])
 	subprocess.call(['git', 'clone', '--recurse-submodules', 'https://github.com/cobbr/Covenant'])
-	subprocess.call(['git', 'clone', 'https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git'])
 	# This will install Spider requirements
 	# subprocess.call(['pip', 'install', '-r', '/opt/spiderfoot/requirements.txt')]
 	# Continue with tools
