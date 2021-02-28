@@ -1,0 +1,1 @@
+This folder mostly contains command lines that are used for acheving execution on the Target Machine

@@ -1,0 +1,8 @@
+There are 2 methods:
+
+Files and Links. We are fmailiar with these already but there is a repo that I used for reference incase I need to create payloads
+that will help me eecute code through malicious files, these files are not "Malicious" as all they do is Pop Calc
+
+Link:
+
+https://github.com/arntsonl/calc_security_poc

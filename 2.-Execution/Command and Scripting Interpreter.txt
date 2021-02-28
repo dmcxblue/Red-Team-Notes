@@ -1,0 +1,3 @@
+Please refer to the URL to view the various available
+
+https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/execution/t1059-command-and-scripting-interpreter

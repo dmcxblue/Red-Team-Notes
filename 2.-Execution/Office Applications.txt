@@ -1,0 +1,5 @@
+I used the same as using a Macro it is intended for another user that probably needs it in another workstation and this code can get executed
+
+Link:
+
+https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/execution/t1203-exploitation-for-client-execution/office-applications

