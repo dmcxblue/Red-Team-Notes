@@ -8,6 +8,7 @@
 # Added more tools and fixed some typos
 # Added the Names cause I would get lost
 # Added more installations steps so tools get a chance to be ready and installed
+# Kali linux Version
 ######################################
 #
 # Current Tools
