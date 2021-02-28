@@ -1,0 +1,11 @@
+SharpUp.exe:
+
+https://github.com/GhostPack/SharpUp
+
+DLLSideLoader:
+
+https://github.com/Flangvik/DLLSideloader
+
+DLLSpy:
+
+https://github.com/cyberark/DLLSpy
