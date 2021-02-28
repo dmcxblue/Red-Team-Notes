@@ -1,0 +1,11 @@
+This jsut requires you to install Setoolkit or Gophish
+
+Their proper githus are listed below:
+
+Setoolkit:
+
+https://github.com/trustedsec/social-engineer-toolkit
+
+GoPhish:
+
+https://github.com/gophish/gophish
