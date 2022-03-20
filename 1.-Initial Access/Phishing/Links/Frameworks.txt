@@ -1,4 +1,4 @@
-This jsut requires you to install Setoolkit or Gophish
+This just requires you to install Setoolkit or Gophish
 
 Their proper githus are listed below:
 
